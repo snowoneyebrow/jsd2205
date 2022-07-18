@@ -1,0 +1,33 @@
+part1总结
+
+https://gitee.com/xiloer/jsd2205-se.git
+
+
+对我而言，文件的内容读给我（输入），我的内容写到文件中（输出）
+
+流是一次性的
+
+
+如图 当String作为形参传递到方法里的时候,实际上传递的是str引用的拷贝,改变的是str引用的拷贝,而后方法结束，形参str被销毁, 原str的引用保持不变,还是指向原常量池中的1234  这个方法输出的是1234
+
+
+try{
+            Thread.sleep(1000);
+        }catch (Exception e){
+
+
+git：http://doc.canglaoshi.org/
+
+缓冲：加速
+
+关闭流：关闭最外面就行，里面会层层关闭
+
+public static final long serialVersionUID = 42L;
+如果不写这句，那么每次改变类的变量和方法后，原来的obj文件都不能读取，
+加了这句，原来的obj文件依然能读取
+
+404.html页面前面要加/
+
+client为什么是守护线程？
+
+为什么private void sendMessage是private?

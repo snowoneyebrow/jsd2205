@@ -1,0 +1,44 @@
+Hi Lin,
+
+%1 in the old format is exactly the same as the wildcard *
+
+The text that * matches is stored in the %1 variable.
+
+
+%1 in the new format is replaced with this stored text.
+
+
+
+
+For example, the old format:
+do%1ad
+
+will match "download" and the %1 variable will contain "wnlo"
+
+with the new format:
+__%1__
+
+a new filename is generated:
+__wnlo__
+
+
+
+Everything will walk through all filenames to try and find patterns.
+For example, if all filenames start with foo, then the old format will start
+with foo.
+If all filenames end with .mp3, then the old format will end with .mp3
+
+
+So the old format rules are:
+%1 will match any number of characters any number of times and store the
+matched text in variable %1.
+The same applies with variable %2-%9.
+
+The new format rules are:
+%1 will be replaced with the matched text from old format.
+The same applies with variable %2-%9.
+
+%% = a single literal %
+
+Regards,
+David
