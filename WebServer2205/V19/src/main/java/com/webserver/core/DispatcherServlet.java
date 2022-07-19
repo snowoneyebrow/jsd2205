@@ -1,6 +1,8 @@
 package com.webserver.core;
 
+import com.webserver.controller.ArticleController;
 import com.webserver.controller.UserController;
+import com.webserver.entity.Article;
 import com.webserver.http.HttpServletRequest;
 import com.webserver.http.HttpServletResponse;
 
@@ -59,6 +61,12 @@ public class DispatcherServlet {
         } else if ("/userList".equals(path)) {
             UserController controller = new UserController();
             controller.userList(request, response);
+        } else if ("/writeArticle".equals(path)) {
+            ArticleController controller = new ArticleController();
+            controller.writeArticle(request, response);
+        } else if ("/showAllArticled".equals(path)) {
+            ArticleController controller = new ArticleController();
+            controller.showAllArticle(request, response);
         } else {
             File file = new File(staticDir, path);
             System.out.println("该页面是否存在：" + file.exists());

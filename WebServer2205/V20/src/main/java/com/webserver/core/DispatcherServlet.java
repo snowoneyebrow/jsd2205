@@ -1,6 +1,7 @@
 package com.webserver.core;
 
 import com.webserver.controller.ArticleController;
+import com.webserver.controller.ToolsController;
 import com.webserver.controller.UserController;
 import com.webserver.entity.Article;
 import com.webserver.http.HttpServletRequest;
@@ -67,6 +68,9 @@ public class DispatcherServlet {
         } else if ("/showAllArticled".equals(path)) {
             ArticleController controller = new ArticleController();
             controller.showAllArticle(request, response);
+        } else if ("/createQR".equals(path)) {
+            ToolsController controller = new ToolsController();
+            controller.createQR(request, response);
         } else {
             File file = new File(staticDir, path);
             System.out.println("该页面是否存在：" + file.exists());
