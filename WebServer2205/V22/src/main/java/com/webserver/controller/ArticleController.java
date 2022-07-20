@@ -74,7 +74,7 @@ public class ArticleController {
         pw.println("<meta charset=\"UTF-8\">");
         pw.println("<title>文章列表</title>");
         pw.println("</head>");
-        pw.println("<body>");
+        pw.println("<body style=\"background:url('/tsukiniyorisou.jpg') no-repeat center bottom fixed;background-size:contain\">");
         pw.println("<center>");
         pw.println("<h1 style=\"color:#E50080\">文章列表</h1>");
         pw.println("<table border=\"2\" bgcolor=\"#FE91CC\">");
@@ -97,5 +97,10 @@ public class ArticleController {
         pw.println("</center>");
         pw.println("</body>");
         pw.println("</html>");
+    }
+
+    @RequestMapping("/deleteArticle")
+    public void delete(HttpServletRequest request, HttpServletResponse response) {
+        System.out.println("开始处理删除用户动作！");
     }
 }

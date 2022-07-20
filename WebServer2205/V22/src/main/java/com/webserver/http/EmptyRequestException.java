@@ -3,6 +3,7 @@ package com.webserver.http;
 //空请求异常
 public class EmptyRequestException extends Exception {
     public EmptyRequestException() {
+
     }
 
     public EmptyRequestException(String message) {

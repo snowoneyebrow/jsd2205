@@ -1,5 +1,7 @@
 package com.webserver.controller;
 
+import com.webserver.annotations.Controller;
+import com.webserver.annotations.RequestMapping;
 import com.webserver.core.ClientHandler;
 import com.webserver.core.DispatcherServlet;
 import com.webserver.entity.User;
@@ -11,6 +13,7 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 
+@Controller
 public class UserController {
     private static File userDir;
 
@@ -21,6 +24,7 @@ public class UserController {
         }
     }
 
+    @RequestMapping("/regUser")
     public void reg(HttpServletRequest request, HttpServletResponse response) {
         System.out.println("开始处理用户注册！");
 
@@ -62,6 +66,7 @@ public class UserController {
         }
     }
 
+    @RequestMapping("/userList")
     public void userList(HttpServletRequest request, HttpServletResponse response) {
         System.out.println("开始处理动态页面！");
 
@@ -120,6 +125,7 @@ public class UserController {
         pw.println("</html>");
     }
 
+    @RequestMapping("/loginUser")
     public void login(HttpServletRequest request, HttpServletResponse response) {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
@@ -151,6 +157,11 @@ public class UserController {
 
         //登录失败
         response.sendRedirect("/login_fail.html");
+    }
+
+    @RequestMapping("/deleteUser")
+    public void delete(HttpServletRequest request,HttpServletResponse response){
+        System.out.println("开始处理删除用户动作！");
     }
 
     public static void main(String[] args) throws URISyntaxException {

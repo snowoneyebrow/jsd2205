@@ -3,7 +3,6 @@ package com.webserver.controller;
 import com.webserver.annotations.Controller;
 import com.webserver.annotations.RequestMapping;
 import com.webserver.core.ClientHandler;
-import com.webserver.core.DispatcherServlet;
 import com.webserver.entity.User;
 import com.webserver.http.HttpServletRequest;
 import com.webserver.http.HttpServletResponse;
@@ -114,6 +113,7 @@ public class UserController {
             pw.println("<td>" + user.getPassword() + "</td>");
             pw.println("<td>" + user.getNickname() + "</td>");
             pw.println("<td>" + user.getAge() + "</td>");
+            pw.println("<td><a href=\"/deleteUser?username=" + user.getUsername() + "\">删除</a></td>");
             pw.println("</tr>");
         }
 
@@ -160,11 +160,11 @@ public class UserController {
     }
 
     @RequestMapping("/deleteUser")
-    public void delete(HttpServletRequest request,HttpServletResponse response){
+    public void delete(HttpServletRequest request, HttpServletResponse response) {
         System.out.println("开始处理删除用户动作！");
     }
 
-    public static void main(String[] args) throws URISyntaxException {
+    /*public static void main(String[] args) {
         System.out.println(ClientHandler.class.getClass().getResource("/").getPath());
-    }
+    }*/
 }

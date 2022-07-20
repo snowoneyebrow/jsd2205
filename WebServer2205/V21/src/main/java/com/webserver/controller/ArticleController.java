@@ -1,5 +1,7 @@
 package com.webserver.controller;
 
+import com.webserver.annotations.Controller;
+import com.webserver.annotations.RequestMapping;
 import com.webserver.entity.Article;
 import com.webserver.http.HttpServletRequest;
 import com.webserver.http.HttpServletResponse;
@@ -8,6 +10,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Controller
 public class ArticleController {
     private static File articleDir;
 
@@ -18,6 +21,7 @@ public class ArticleController {
         }
     }
 
+    @RequestMapping("/writeArticle")
     public void writeArticle(HttpServletRequest request, HttpServletResponse response) {
         String title = request.getParameter("title");
         String author = request.getParameter("author");
@@ -46,6 +50,7 @@ public class ArticleController {
         }
     }
 
+    @RequestMapping("/showAllArticle")
     public void showAllArticle(HttpServletRequest request, HttpServletResponse response) {
         List<Article> articleList = new ArrayList<>();
         File[] subs = articleDir.listFiles(f -> f.getName().endsWith(".obj"));

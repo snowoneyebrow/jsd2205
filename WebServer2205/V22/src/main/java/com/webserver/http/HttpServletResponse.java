@@ -1,7 +1,5 @@
 package com.webserver.http;
 
-import com.webserver.core.DispatcherServlet;
-
 import java.io.*;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;

@@ -4,11 +4,8 @@ import com.webserver.http.EmptyRequestException;
 import com.webserver.http.HttpServletRequest;
 import com.webserver.http.HttpServletResponse;
 
-import java.io.*;
-import java.lang.reflect.InvocationTargetException;
+import java.io.IOException;
 import java.net.Socket;
-import java.net.URISyntaxException;
-import java.nio.charset.StandardCharsets;
 
 /**
  * 处理一次与客户端的HTTP交互操作
@@ -34,16 +31,8 @@ public class ClientHandler implements Runnable {
             //2：处理请求
             try {
                 DispatcherServlet.getInstance().service(request, response);
-            } catch (URISyntaxException e) {
-                throw new RuntimeException(e);
-            } catch (ClassNotFoundException e) {
-                throw new RuntimeException(e);
-            } catch (InstantiationException e) {
-                throw new RuntimeException(e);
-            } catch (IllegalAccessException e) {
-                throw new RuntimeException(e);
-            } catch (InvocationTargetException e) {
-                throw new RuntimeException(e);
+            } catch (Exception e) { //
+                e.printStackTrace();
             }
 
             //3：发送响应

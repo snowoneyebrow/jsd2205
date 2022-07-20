@@ -1,11 +1,5 @@
 package com.webserver.core;
 
-import com.webserver.annotations.Controller;
-import com.webserver.annotations.RequestMapping;
-import com.webserver.controller.ArticleController;
-import com.webserver.controller.ToolsController;
-import com.webserver.controller.UserController;
-import com.webserver.entity.Article;
 import com.webserver.http.HttpServletRequest;
 import com.webserver.http.HttpServletResponse;
 
@@ -14,7 +8,6 @@ import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.net.URISyntaxException;
-import java.nio.file.Files;
 
 public class DispatcherServlet {
     private static File rootDir;
@@ -27,8 +20,6 @@ public class DispatcherServlet {
         try {
             //定位到：target/classes
             rootDir = new File(DispatcherServlet.class.getClassLoader().getResource(".").toURI());
-
-            File dir = new File(rootDir, "com/webserver/controller");
 
             //定位static目录
             staticDir = new File(rootDir, "static");
@@ -60,24 +51,11 @@ public class DispatcherServlet {
         String path = request.getRequestURI();
 
         try {
-            File dir = new File(rootDir, "com/webserver/controller");
-            File[] subs = dir.listFiles(f -> f.getName().endsWith(".class"));
-            String packageName = "com.webserver.controller";
-            for (File sub : subs) {
-                Class cls = Class.forName(packageName + "." + sub.getName().split("\\.")[0]);
-                if (cls.isAnnotationPresent(Controller.class)) {
-                    Object obj = cls.newInstance();
-                    Method[] methods = cls.getDeclaredMethods();
-                    for (Method method : methods) {
-                        if (method.isAnnotationPresent(RequestMapping.class)) {
-                            RequestMapping rm = method.getAnnotation(RequestMapping.class);
-                            if (path.equals(rm.value())) {
-                                method.invoke(obj, request, response); //记得传参
-                                return;
-                            }
-                        }
-                    }
-                }
+            Method method = HandlerMapping.getMethod(path);
+            if (method != null) {
+                method.invoke(method.getDeclaringClass().newInstance(), request, response);
+                //getDeclaringClass()方法返回表示声明由此Method对象表示的方法的类的Class对象。
+                return;
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -104,11 +82,10 @@ public class DispatcherServlet {
         //测试添加其他头
         response.addHeader("Server", "WebServer");
     }
-}
 
     /*public static void main(String[] args) throws IOException {
-        File file = new File("image.png"); //js不认识
+        File file = new File("image.png"); //js格式不认识
         String str = Files.probeContentType(file.toPath());
         System.out.println(str);
     }*/
-
+}

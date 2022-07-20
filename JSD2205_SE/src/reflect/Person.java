@@ -1,5 +1,9 @@
 package reflect;
 
+import reflect.annotations.AutoRunClass;
+import reflect.annotations.AutoRunMethod;
+
+@AutoRunClass
 public class Person {
     private String name = "张三";
     private int age = 22;
@@ -13,6 +17,7 @@ public class Person {
         this.age = age;
     }
 
+    @AutoRunMethod(5)
     public void sayHello() {
         System.out.println(name + "：hello！");
     }

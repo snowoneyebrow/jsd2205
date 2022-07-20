@@ -35,6 +35,7 @@ public class HttpServletRequest {
 
         //1.1解析请求行
         parseRequestLine();
+
         //1.2:解析消息头
         parseHeaders();
 
