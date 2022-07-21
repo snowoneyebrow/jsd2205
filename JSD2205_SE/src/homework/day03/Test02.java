@@ -27,7 +27,7 @@ import java.util.Scanner;
  * @author Xiloer
  */
 
-public class Day03Test02 {
+public class Test02 {
     public static void main(String[] args) throws IOException {
         Scanner scan = new Scanner(System.in);
 

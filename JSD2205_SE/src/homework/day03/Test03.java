@@ -8,7 +8,7 @@ import java.io.*;
  * @author Xiloer
  */
 
-public class Day03Test03 {
+public class Test03 {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         //生成obj文件到硬盘
         User user1 = new User("张三", "123", "张桑", 31);

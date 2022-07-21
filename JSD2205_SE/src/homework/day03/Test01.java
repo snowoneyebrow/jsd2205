@@ -9,7 +9,7 @@ import java.io.*;
  *
  * @author Xiloer
  */
-public class Day03Test01 {
+public class Test01 {
     public static void main(String[] args) throws IOException {
         FileInputStream fis = new FileInputStream("test.txt");
         BufferedInputStream bis = new BufferedInputStream(fis);
