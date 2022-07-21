@@ -1,6 +1,6 @@
 package homework.day03;
 
-import java.io.*;
+import java.io.Serializable;
 
 public class User implements Serializable {
     public static final long serialVersionUID = 42L;
@@ -15,17 +15,6 @@ public class User implements Serializable {
         this.pwd = pwd;
         this.nick = nick;
         this.age = age;
-    }
-
-    public void initialize() throws IOException {
-        FileOutputStream fos = new FileOutputStream("./" + this.name + ".obj");
-        ObjectOutputStream oos = new ObjectOutputStream(fos);
-
-        oos.writeObject(this);
-        oos.flush();
-        System.out.println(this.name + ".obj" + " 写出完毕");
-
-        fos.close();
     }
 
     @Override

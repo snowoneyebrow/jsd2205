@@ -3,6 +3,8 @@ package homework.day01;
 import java.io.File;
 import java.io.FileFilter;
 
+//列出当前目录中所有名字包含s的子项
+//使用匿名内部类和lambda两种写法
 public class Test02 {
     public static void main(String[] args) {
         File dir = new File("./");
