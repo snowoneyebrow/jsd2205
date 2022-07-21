@@ -16,9 +16,8 @@ public @interface AutoRunMethod {
     类型 参数名() default 默认值; //“default 默认值”是可写可不写的
 
     如果当前注解只有一个参数，那么参数名应当叫value。
-    此时当我们在外面使用该注解时，可以使用：
-    @AutoRunMethod(3)
-    进行传参。此时注解中value的值为3。
+    此时当我们在外面使用该注解时，可以使用@AutoRunMethod(3)进行传参。
+    此时注解中value的值为3。
 
     如果该参数名不叫value，例如，定义时如下：
     public @interface AutoRunMethod{
@@ -48,10 +47,7 @@ public @interface AutoRunMethod {
        int value() default 1;
     }
     使用该注解时：
-    @AutoRunMethod(3)
-    此时value的值为3
-
-    @AutoRunMethod
-    此时value的值为1（默认值）
+    @AutoRunMethod(3)：此时value的值为3
+    @AutoRunMethod：此时value的值为1（默认值）
      */
 }

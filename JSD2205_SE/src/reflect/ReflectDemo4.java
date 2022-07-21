@@ -11,11 +11,9 @@ public class ReflectDemo4 {
         p.watchTV();
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("请输入类名：");
-        //reflect.Person
+        System.out.println("请输入类名："); //reflect.Person
         String className = scanner.nextLine();
-        System.out.println("请输入方法名：");
-        //watchTV
+        System.out.println("请输入方法名："); //watchTV
         String methodName = scanner.nextLine();
 
         //1、实例化

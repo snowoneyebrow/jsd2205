@@ -11,7 +11,7 @@ public class ReflectDemo6 {
         Class cls = Class.forName("reflect.Person");
         Object obj = cls.newInstance();
 
-        //Class的方法：getMethod()，getMethods()都只能获取到类对象表示的类的public方法
+        //Class的方法：getMethod()、getMethods()都只能获取到类对象表示的类的public方法
         //Method method = cls.getMethod("hehe");
         Method method = cls.getDeclaredMethod("hehe"); //获取本类自己定义的方法（包含private方法）
         method.setAccessible(true); //强行打开访问权限，使private可以被外部访问，不过慎用！

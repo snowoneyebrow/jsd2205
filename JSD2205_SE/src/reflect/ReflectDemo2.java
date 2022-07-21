@@ -22,6 +22,7 @@ public class ReflectDemo2 {
         String className = scanner.nextLine();
         Class cls = Class.forName(className);
 
+        //2、调用Class的newInstance()方法来调用无参构造器
         Object obj = cls.newInstance();
         System.out.println(obj);
     }

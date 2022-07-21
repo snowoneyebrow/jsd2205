@@ -11,25 +11,26 @@ import java.util.Scanner;
 public class ReflectDemo1 {
     public static void main(String[] args) throws ClassNotFoundException {
         /*
-            Class类：Class类称为类的类对象。
-            JVM加载一个类的class文件时，就会创建一个Class实例与该类绑定。
-            因此每个被加载的类都有且只有一个Class实例，这个实例就是加载的该类的类对象。
-            通过一个类的类对象我们可以获取这个类的一切信息（类名、属性、方法、构造器等），从而在程序运行期间进行相关的操作。
+        Class类：Class类称为类的类对象。
+        JVM加载一个类的class文件时，就会创建一个Class实例与该类绑定。
+        因此每个被加载的类都有且只有一个Class实例，这个实例就是加载的该类的类对象。
+        通过一个类的类对象我们可以获取这个类的一切信息（类名、属性、方法、构造器等），从而在程序运行期间进行相关的操作。
 
-            因此反射第一步就是要获取操作的类的类对象。获取方式有三种：
-            1、类名.class：
-            Class cls = String.class;
+        因此反射第一步就是要获取操作的类的类对象。获取方式有三种：
+        1、类名.class：
+        Class cls = String.class;
 
-            2、Class.forName(String className)：
-            Class cls = Class.forName("java.lang.String"); //参数需要是完全限定名：包名.类名
-            注意：基本类型不支持此种方式获取类对象！
+        2、Class.forName(String className)：
+        Class cls = Class.forName("java.lang.String"); //参数需要是完全限定名：包名.类名
+        注意：基本类型不支持此种方式获取类对象！
 
-            3、ClassLoader类加载器形式获取：......
+        3、ClassLoader类加载器形式获取：......
          */
 
-        //获取String的类对象
+        //1、类名.class：
         //Class cls = String.class;
 
+        //2、Class.forName(String className)：
         //Class cls = Class.forName("java.lang.String");
 
         /*

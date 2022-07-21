@@ -18,7 +18,7 @@ public class Test {
 
         Method[] methods = cls.getDeclaredMethods();
         for (Method method : methods) {
-            //判断是否为无参且public的方法
+            //判断是否为无参且public且方法名含字母a的方法
             if (method.getParameterCount() == 0 && method.getModifiers() == Modifier.PUBLIC && method.getName().contains("a")) {
                 method.invoke(obj);
             }

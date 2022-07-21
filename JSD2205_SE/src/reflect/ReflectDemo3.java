@@ -11,6 +11,7 @@ public class ReflectDemo3 {
 
         //1、加载类对象
         Class cls = Class.forName("reflect.Person");
+
         //2、通过类对象获取指定的有参构造器：Person(String,int)
         //Constructor c = cls.getConstructor(); //不传参获取的是无参构造器
         Constructor c = cls.getConstructor(String.class, int.class); //指定是哪个构造器
