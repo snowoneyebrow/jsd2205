@@ -1,4 +1,4 @@
-package com.webserver.entity;
+package com.tedu.boot.entity;
 
 import java.io.Serializable;
 

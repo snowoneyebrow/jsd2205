@@ -5,6 +5,7 @@ import com.webserver.annotations.RequestMapping;
 import com.webserver.entity.Article;
 import com.webserver.http.HttpServletRequest;
 import com.webserver.http.HttpServletResponse;
+import org.apache.log4j.Logger;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -12,6 +13,7 @@ import java.util.List;
 
 @Controller
 public class ArticleController {
+    private static final Logger logger = Logger.getLogger(ArticleController.class);
     private static File articleDir;
 
     static {
@@ -47,6 +49,7 @@ public class ArticleController {
             response.sendRedirect("/article_success.html");
         } catch (IOException e) {
             e.printStackTrace();
+            logger.debug(e.getMessage(),e);
         }
     }
 
@@ -64,6 +67,7 @@ public class ArticleController {
                 articleList.add(article);
             } catch (ClassNotFoundException | IOException e) {
                 e.printStackTrace();
+                logger.debug(e.getMessage(),e);
             }
         }
 
@@ -101,6 +105,6 @@ public class ArticleController {
 
     @RequestMapping("/deleteArticle")
     public void delete(HttpServletRequest request, HttpServletResponse response) {
-        System.out.println("开始处理删除用户动作！");
+        logger.info("开始处理删除用户动作！");
     }
 }

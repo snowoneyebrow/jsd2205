@@ -2,18 +2,18 @@ package com.webserver.controller;
 
 import com.webserver.annotations.Controller;
 import com.webserver.annotations.RequestMapping;
-import com.webserver.core.ClientHandler;
 import com.webserver.entity.User;
 import com.webserver.http.HttpServletRequest;
 import com.webserver.http.HttpServletResponse;
+import org.apache.log4j.Logger;
 
 import java.io.*;
-import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 
 @Controller
 public class UserController {
+    private static final Logger logger = Logger.getLogger(UserController.class);
     private static File userDir;
 
     static {
@@ -25,13 +25,13 @@ public class UserController {
 
     @RequestMapping("/regUser")
     public void reg(HttpServletRequest request, HttpServletResponse response) {
-        System.out.println("开始处理用户注册！");
+        logger.info("开始处理用户注册！");
 
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         String nickname = request.getParameter("nickname");
         String age = request.getParameter("age");
-        System.out.println(username + "," + password + "," + nickname + "," + age);
+        logger.debug(username + "," + password + "," + nickname + "," + age);
 
         //对数据进行必要的验证工作
         if (username == null || password == null || nickname == null || age == null
@@ -62,12 +62,13 @@ public class UserController {
             response.sendRedirect("/reg_success.html"); //响应注册成功页面给浏览器
         } catch (IOException e) {
             e.printStackTrace();
+            logger.error(e.getMessage(), e);
         }
     }
 
     @RequestMapping("/userList")
     public void userList(HttpServletRequest request, HttpServletResponse response) {
-        System.out.println("开始处理动态页面！");
+        logger.info("开始处理动态页面！");
 
         //创建一个List集合保存所有的User对象
         List<User> userList = new ArrayList<>();
@@ -82,10 +83,11 @@ public class UserController {
                     ObjectInputStream ois = new ObjectInputStream(fis);
             ) {
                 User user = (User) ois.readObject();
-                System.out.println(user);
+                logger.debug("user：" + user);
                 userList.add(user);
             } catch (IOException | ClassNotFoundException e) {
                 e.printStackTrace();
+                logger.error(e.getMessage(), e);
             }
         }
 
@@ -152,6 +154,7 @@ public class UserController {
                 }
             } catch (IOException | ClassNotFoundException e) {
                 e.printStackTrace();
+                logger.error(e.getMessage(), e);
             }
         }
 
@@ -161,7 +164,7 @@ public class UserController {
 
     @RequestMapping("/deleteUser")
     public void delete(HttpServletRequest request, HttpServletResponse response) {
-        System.out.println("开始处理删除用户动作！");
+        logger.info("开始处理删除用户动作！");
     }
 
     /*public static void main(String[] args) {

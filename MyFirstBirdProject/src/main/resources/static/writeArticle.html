@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <title>发表文章</title>
 </head>
-<body style="background:url('/nijigasaki1.jpg') no-repeat center left fixed,url('/nijigasaki2.jpg') no-repeat center right fixed;background-size:contain,contain">
+<body background="" style="background:url('/riddle_joker.jpg') no-repeat center bottom fixed;background-size:contain">
 <center>
-    <h1 style="color:#E50080">发表文章</h1>
+    <h1>发表文章</h1>
     <form action="/writeArticle" method="get">
-        <table border="2" bgcolor="#FE91CC">
+        <table border="2">
             <tr>
                 <td>标题</td>
-                <td><input name="title" type="text" size="50"></td>
+                <td><input name="title" type="text"></td>
             </tr>
             <tr>
                 <td>作者</td>
-                <td><input name="author" type="text" size="50"></td>
+                <td><input name="author" type="text"></td>
             </tr>
             <tr>
                 <td colspan="2">
-                    <textarea cols="40" rows="20" name="content" style="resize:none;background-color:#2B2B2B;font-size:20px;color:#BABABA"></textarea>
+                    <textarea name="content"></textarea>
                 </td>
             </tr>
             <tr>
                 <td colspan="2" align="center">
-                    <input type="submit" size="30" value="发表">
+                    <input type="submit" value="发表">
                 </td>
             </tr>
         </table>

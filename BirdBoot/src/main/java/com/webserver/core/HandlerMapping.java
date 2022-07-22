@@ -5,13 +5,20 @@ import com.webserver.annotations.RequestMapping;
 
 import java.io.File;
 import java.lang.reflect.Method;
+import java.net.URISyntaxException;
 import java.util.HashMap;
 import java.util.Map;
 
 public class HandlerMapping {
     private static Map<String, Method> mapping = new HashMap<>();
+    private static File rootDir; //定位的是应用项目中启动类所在的包
 
     static {
+        try {
+            rootDir = new File(WebServerApplication.BootClass.getResource(".").toURI());
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        }
         init();
     }
 
@@ -19,11 +26,14 @@ public class HandlerMapping {
         try {
             //有getClassLoader()就是上一层，没有就是当前层
             //"."表示target/classes
-            File dir = new File(HandlerMapping.class.getClassLoader().getResource("./com/webserver/controller").toURI());
+            File dir = new File(rootDir, "controller");
+            if (!dir.exists()) {
+                return;
+            }
             File[] subs = dir.listFiles(f -> f.getName().endsWith(".class"));
-            String packageName = "com.webserver.controller";
+            String packageName = WebServerApplication.BootClass.getPackage().getName() + ".controller.";
             for (File sub : subs) {
-                Class cls = Class.forName(packageName + "." + sub.getName().split("\\.")[0]);
+                Class cls = Class.forName(packageName + sub.getName().split("\\.")[0]);
                 if (cls.isAnnotationPresent(Controller.class)) {
                     Method[] methods = cls.getDeclaredMethods();
                     for (Method method : methods) {

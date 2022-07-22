@@ -4,69 +4,33 @@
     <meta charset="UTF-8">
     <title>用户注册</title>
 </head>
-<body background="" style="background:url('/bg.jpg') no-repeat center fixed;background-size:contain">
+<body style="background:url('/59053359.jpg') no-repeat center fixed;background-size:contain">
 <center>
-    <h1 style="color:#E50080">用户注册</h1>
-    <!--
-        form表单
-        form表单是用于将用户在页面上输入的信息提交给服务端使用的组件。
-        form表单中应当包含若干的输入组件。
-        注意：只有包含在form标签中间的输入组件中用户输入的信息才会提交给服务端！
-
-        form上有两个重要的属性：
-        action：用于指定表单提交的路径，该路径需要服务端配合处理
-        method：表单提交的形式，有两个可选项:
-               GET：地址栏形式提交，表单数据会拼接到地址栏的URL中传递
-               POST：表单数据会被包含在请求的消息正文中被提交
-               当表单数据含有用户隐私信息或附件上传时应当使用POST。
-
-               method属性不指定时，默认是GET请求提交。
-    -->
-
-    <!--
-        http://localhost:8080/index.html
-
-        此表单提交时，表单中各部分信息发挥的作用：
-        提交后的路径为：
-        http://localhost:8080/regUser?username=fancq&password=123456&nickname=chuanqi&age=22
-        此URL地址中抽象路径部分为：
-        /regUser?username=fancq&password=123456&nickname=chuanqi&age=22
-        这里抽象路径中如果附带参数，则URL格式要求抽象路径要被"?"分割为两部分
-        "?"左侧为抽象路径中的请求部分，这里对应的是表单的action的值
-        "?"右侧为抽象路径中的参数部分，参数的个数由表单中输入组件的个数决定。
-        本案例中该form表单里有四个输入框，因此本次提交的参数就有4个。
-        每个参数之间用"&"分割开，每个参数又由"="分割为参数名与参数值。
-        而参数名是由输入组件的名字决定的（<input name="">），参数值由用户在该输入组件上输入的信息决定。
-    -->
-
-    <!--表单：只有包含在表单里才能传给服务器-->
-    <form action="/regUser" method="get">
-    <table border="2" bgcolor="00A1E9">
-        <tr>
-            <!--
-                注意！所有在form中的输入组件都必须用name属性定义名字，否则表单提交时该输入框的信息会被忽略！
-            -->
-            <td>用户名</td>
-            <td><input name="username" type="text" size="30"></td>
-        </tr>
-        <tr>
-            <td>密码</td>
-            <td><input name="password" type="password" size="30"></td>
-        </tr>
-        <tr>
-            <td>昵称</td>
-            <td><input name="nickname" type="text" size="30"></td>
-        </tr>
-        <tr>
-            <td>年龄</td>
-            <td><input name="age" type="text" size="30"></td>
-        </tr>
-        <tr>
-            <td colspan="2" align="center">
-                <input type="submit" size="30" value="注册">
-            </td>
-        </tr>
-    </table>
+    <h1>用户注册</h1>
+    <form action="/regUser" method="post">
+        <table border="2">
+            <tr>
+                <td>用户名</td>
+                <td><input name="username" type="text"></td>
+            </tr>
+            <tr>
+                <td>密码</td>
+                <td><input name="password" type="password"></td>
+            </tr>
+            <tr>
+                <td>昵称</td>
+                <td><input name="nickname" type="text"></td>
+            </tr>
+            <tr>
+                <td>年龄</td>
+                <td><input name="age" type="text"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="注册">
+                </td>
+            </tr>
+        </table>
     </form>
 </center>
 </body>

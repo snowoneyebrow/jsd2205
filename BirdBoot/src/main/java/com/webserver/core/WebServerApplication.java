@@ -10,6 +10,7 @@ import java.util.concurrent.Executors;
 public class WebServerApplication {
     private ServerSocket serverSocket;
     private ExecutorService threadPool;
+    protected static Class BootClass; //启动类的类对象
 
     public WebServerApplication() { //构造方法
         try {
@@ -38,7 +39,8 @@ public class WebServerApplication {
         }
     }
 
-    public static void main(String[] args) {
+    public static void run(Class cls, String[] args) {
+        BootClass = cls;
         WebServerApplication application = new WebServerApplication();
         application.start();
     }

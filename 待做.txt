@@ -31,3 +31,5 @@ public static final long serialVersionUID = 42L;
 client为什么是守护线程？
 
 为什么private void sendMessage是private?
+
+log4j.properties放resources文件夹里
