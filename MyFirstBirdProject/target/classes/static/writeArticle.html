@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发表文章</title>
+</head>
+<body style="background:url('/nijigasaki1.jpg') no-repeat center left fixed,url('/nijigasaki2.jpg') no-repeat center right fixed;background-size:contain,contain">
+<center>
+    <h1 style="color:#E50080">发表文章</h1>
+    <form action="/writeArticle" method="get">
+        <table border="2" bgcolor="#FE91CC">
+            <tr>
+                <td>标题</td>
+                <td><input name="title" type="text" size="50"></td>
+            </tr>
+            <tr>
+                <td>作者</td>
+                <td><input name="author" type="text" size="50"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea cols="40" rows="20" name="content" style="resize:none;background-color:#2B2B2B;font-size:20px;color:#BABABA"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" size="30" value="发表">
+                </td>
+            </tr>
+        </table>
+    </form>
+</center>
+</body>
+</html>
