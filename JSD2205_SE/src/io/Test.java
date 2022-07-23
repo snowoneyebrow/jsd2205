@@ -1,29 +1,16 @@
 package io;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.util.Scanner;
-
 public class Test {
-    public static void main(String[] args) throws IOException {
-        Scanner scan = new Scanner(System.in);
-        FileOutputStream fos = new FileOutputStream("./note.txt", true);
-        while (true) {
-            System.out.println("请输入文字，输入exit退出：");
-            String line = scan.nextLine();
-            if ("exit".equalsIgnoreCase(line)) {
-                //若line放equals前面，且line是null，则会抛出空指针异常，所以line放equals后面
-                //equalsIgnoreCase：忽略大小写的比较
-                System.out.println("程序退出");
-                break;
-            }
-            line += "\r\n"; //换行
-            byte[] data = line.getBytes(StandardCharsets.UTF_8);
-            fos.write(data);
-            System.out.println("写入成功");
-        }
-        fos.close();
+    public static void main(String[] args) {
+        /*
+            返回当前系统时间的毫秒值(UTC时间   世界协调时)
+            从公元1970年1月1日 00:00:00开始的偏移量(单位是毫秒)
+         */
+        long m = System.currentTimeMillis();
+        System.out.println(m);
+
+        long max = Long.MAX_VALUE;
+        max = max/1000/60/60/24/365;
+        System.out.println("公元:"+(1970+max));
     }
 }
