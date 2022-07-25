@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>03图片标签</title>
 </head>
 <body>
-$END$
+<!-- 注释：
+Ctrl+/
+Ctrl+Shift+/
+c+Tab
+-->
+
+<!-- 相对路径：访问站内资源时用 -->
+<img src="a.png" alt="图片不能显示时显示的文本" width="80%"> <!-- 同级目录 -->
+<img src="../b.webp" title="鼠标悬停时显示的文本" width="1000"> <!-- 上级目录 -->=
+<img src="abc/c.png" width="1000"> <!-- 下级目录 -->
+
+<!-- 绝对路径：访问站外资源时用 -->
+<img src="https://cdn.tmooc.cn/tmooc-web/css/img/img2019052301x.jpg"> <!-- 盗链 -->
+
+<!-- 设置图片的宽高：
+1、像素：width="1000" height="1000"，只设置宽度时高度会自动等比例缩放
+2、百分比：指上级的百分比，比如img的上级是body
+-->
 </body>
 </html>

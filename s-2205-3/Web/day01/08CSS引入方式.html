@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--
+Cascading Style Sheet：层叠样式表（美化页面、装修）
+如何在html页面中添加CSS样式代码？
+三种引入方式：
+内联样式：在标签的style属性中添加样式代码，弊端：不能复用
+内部样式：在head标签里添加style标签，标签体内写样式代码，可以复用但是只能在当前页面复用不能多页面复用
+外部样式：在单独的css样式文件中写样式代码，在html页面中通过link标签引入，可以实现多页面复用
+工作中外部样式用的多，因为可以多页面复用而且可以将html代码和CSS样式代码分离开，学习过程中内部样式用的多
+-->
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>08CSS引入方式</title>
+    <style>
+        h2 {
+            color: aqua;
+        }
+    </style>
+    <!-- 引入CSS样式文件 -->
+    <link rel="stylesheet" href="my.css">
 </head>
 <body>
-$END$
+<h1 style="color:red">内联样式1</h1>
+<h1 style="color:pink">内联样式2</h1>
+<h2>内部样式1</h2>
+<h2>内部样式2</h2>
+<h3>外部样式1</h3>
+<h3>外部样式2</h3>
 </body>
 </html>

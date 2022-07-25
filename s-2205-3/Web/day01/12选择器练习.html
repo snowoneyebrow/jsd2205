@@ -1,10 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--
+通过内部样式实现以下效果：
+1、关羽绿色
+2、张飞和苹果黄色
+3、文本框和所有水果背景红色
+4、p2字体粉色
+5、p2和p3背景黄色
+6、达内官网未访问绿色，访问过红色，悬停黄色，点击粉色
+-->
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>12选择器练习</title>
+    <style>
+        #li1 {
+            color: green;
+        }
+
+        .c1 {
+            color: yellow;
+        }
+
+        input[type="text"], body > p {
+            background-color: red;
+        }
+
+        body > div > div > p {
+            color: pink;
+        }
+
+        body div div p {
+            background-color: yellow;
+        }
+
+        a:link {
+            color: green;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:hover {
+            color: yellow;
+        }
+
+        a:active {
+            color: pink;
+        }
+    </style>
 </head>
 <body>
-$END$
+<ul>
+    <li>刘备</li>
+    <li id="li1">关羽</li>
+    <li class="c1">张飞</li>
+</ul>
+<p>香蕉</p>
+<p class="c1">苹果</p>
+<input type="text">
+<input type="password">
+<div>
+    <p>p1</p>
+    <div><p>p2</p></div>
+    <div>
+        <div><p>p3</p></div>
+    </div>
+</div>
+<a href="www.tedu1.com">达内官网1</a>
 </body>
 </html>

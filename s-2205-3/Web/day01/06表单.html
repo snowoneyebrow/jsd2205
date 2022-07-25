@@ -1,10 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>06表单</title>
 </head>
+<!--
+作用：获取用户输入的各种信息并提交给服务器
+学习form表单就是学习form表单中有哪些控件
+-->
 <body>
-$END$
+<!--
+action：设置提交地址
+maxlength：输入字符的最大长度
+value：设置初始值
+readonly：只读
+（当属性的名和值相同时，如readonly="readonly"，则可以省略值只写名）
+name参数必须写
+placeholder：占位文本，初始提示
+-->
+<form action="https://cn.bing.com/">
+    用户名：<input type="text" maxlength="5" value="abc" readonly name="username" placeholder="请输入用户名"><br>
+    密码：<input type="password" name="password" placeholder="请输入密码"><br>
+
+    <!-- 单选框的value属性必须写，否则无论选什么提交的都是on -->
+    <!-- checked设置默认选中 -->
+    <!-- name属性的值要一样 -->
+    性别：<input type="radio" name="gender" value="m" id="r1" checked>
+    <label for="r1">男</label>
+    <input type="radio" name="gender" value="w" id="r2">
+    <label for="r2">女</label><br>
+
+    兴趣爱好：<input type="checkbox" name="hobby" value="other" checked>异性
+    <input type="checkbox" name="hobby" value="man">男同
+    <input type="checkbox" name="hobby" value="woman">女同<br>
+
+    生日：<input type="date" name="birthday"><br>
+    照片：<input type="file" name="pic"><br> <!-- 上传文件 -->
+    城市：
+    <select name="city">
+        <option value="beijing">北京</option>
+        <option value="shanghai">上海</option>
+        <option value="guangzhou" selected>广州</option>
+    </select><br>
+
+    <input type="submit" value="注册">
+    <input type="reset"> <!-- 重置按钮 -->
+    <input type="button" value="自定义"> <!-- 自定义按钮 -->
+</form>
 </body>
 </html>

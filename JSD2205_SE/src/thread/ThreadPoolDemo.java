@@ -3,11 +3,11 @@ package thread;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors; //concurrent：并发
 
-/**
- * 线程池：
- * 线程池是线程的管理机制，主要解决两方面问题：
- * 1、控制线程的数量
- * 2、重用线程
+/*
+线程池：
+线程池是线程的管理机制，主要解决两方面问题：
+1、控制线程的数量
+2、重用线程
  */
 public class ThreadPoolDemo {
     public static void main(String[] args) {

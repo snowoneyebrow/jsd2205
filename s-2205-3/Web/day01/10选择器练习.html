@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--
+通过内部样式实现以下效果：
+1、把张学友改成绿色
+2、把刘德华和悟空改成蓝色
+3、修改取经2人和刘备的背景为黄色
+4、修改密码框的背景为红色
+5、给所有元素添加红色的边框
+-->
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>10选择器练习</title>
+    <style>
+        #p1 {
+            color: green
+        }
+
+        .c1 {
+            color: blue;
+        }
+
+        h1, h2 {
+            background-color: yellow;
+        }
+
+        input[type="password"] {
+            background-color: red;
+        }
+
+        * {
+            border: 1px solid red;
+        }
+    </style>
 </head>
 <body>
-$END$
+<p id="p1">张学友</p>
+<p class="c1">刘德华</p>
+<p>郭富城</p>
+<h1 class="c1">悟空</h1>
+<h1>八戒</h1>
+<h2>刘备</h2>
+<input type="text">
+<input type="password">
 </body>
 </html>

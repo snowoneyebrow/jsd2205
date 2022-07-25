@@ -1,10 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>09选择器</title>
+    <!-- html注释 -->
+    <style> /* css注释 */
+    /* 标签名选择器：选取页面中所有同名标签 */
+
+    /* id选择器：当需要选择页面中某一个元素时使用 */
+    #h1-1 {
+        color: red;
+    }
+
+    /* 类选择器：当需要选择页面中多个不相关的元素时，给多个元素添加相同的class，然后通过类选择器进行选择 */
+    .c1 {
+        color: cornflowerblue;
+    }
+
+    /* 分组选择器：将多个选择器合并成一个选择器 */
+    h3, #h1-1, .c1 {
+        background-color: darkorange;
+    }
+
+    /* 属性选择器：通过元素的属性选择元素 */
+    input[type="text"] {
+        color: darkviolet;
+    }
+
+    /* 任意元素选择器：匹配页面中所有的元素 */
+    * {
+        /* 边框：粗细 样式 颜色 */
+        border: 1px solid red;
+    }
+    </style>
 </head>
 <body>
-$END$
+<input type="text" placeholder="请输入">
+<input type="password">
+<h3>我是新来的</h3>
+<h1 class="c1">冰箱</h1>
+<h1>洗衣机</h1>
+<h1 id="h1-1">电视</h1>
+<h2 class="c1">香蕉</h2>
+<h2>苹果</h2>
+<h2>橘子</h2>
 </body>
 </html>

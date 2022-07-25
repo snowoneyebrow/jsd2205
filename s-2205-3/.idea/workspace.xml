@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="65c2cc31-be55-4ccc-b740-98e462e96eea" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/../3/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../3/web笔记.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/b.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day01/01文本相关.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day01/02简历练习.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day01/03图片标签.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day01/04超链接.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day01/05表格标签.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day01/06表单.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day01/07分区标签.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day01/08CSS引入方式.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day01/09选择器.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day01/10选择器练习.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day01/11选择器续.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day01/12选择器练习.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day01/a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day01/abc/c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day01/my.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2CPoaSL0vlylZIklDJFCmPL0a93" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lin/Desktop&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lin\Desktop\jsd2205\s-2205-3\Web\day01" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="65c2cc31-be55-4ccc-b740-98e462e96eea" name="变更" comment="" />
+      <created>1658713643853</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658713643853</updated>
+      <workItem from="1658713645578" duration="25808000" />
+      <workItem from="1658763509547" duration="1393000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

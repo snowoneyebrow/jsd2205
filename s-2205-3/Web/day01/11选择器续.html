@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>11选择器续</title>
+    <style>
+        /* 子孙后代选择器，一直串下去 */
+        /*body div div p {
+            color: red;
+        }*/
+
+        /* 子元素选择器，匹配到就停 */
+        body > div > div > p {
+            color: red;
+        }
+
+        /* 伪类选择器（下面写的顺序不能变） */
+        a:link { /* 未访问 */
+            color: red;
+        }
+
+        a:visited { /* 访问过 */
+            color: green;
+        }
+
+        a:hover { /* 悬停 */
+            color: pink;
+        }
+
+        a:active { /* 点击激活 */
+            color: yellow;
+        }
+    </style>
 </head>
 <body>
-$END$
+<a href="10选择器练习.html">超链接1</a>
+<a href="09选择器.html">超链接2</a>
+<a href="08CSS引入方式.html">超链接3</a>
+<p>p1</p>
+<div>
+    <p>p2</p>
+    <div><p>p3</p></div>
+    <div>
+        <p>p4</p>
+        <div><p>p5</p></div>
+    </div>
+</div>
 </body>
 </html>
