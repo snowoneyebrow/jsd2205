@@ -5,28 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65c2cc31-be55-4ccc-b740-98e462e96eea" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/../3/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../3/web笔记.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/b.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day01/01文本相关.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day01/02简历练习.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day01/03图片标签.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day01/04超链接.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day01/05表格标签.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day01/06表单.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day01/07分区标签.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day01/08CSS引入方式.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day01/09选择器.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day01/10选择器练习.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day01/11选择器续.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day01/12选择器练习.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day01/a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day01/abc/c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day01/my.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day01/Shine_Post_WP.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day02/01颜色和背景.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day02/02背景图片练习.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day02/03文本字体相关.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day02/04文本和字体练习.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day02/05元素显示方式.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day02/06外边距.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day02/07边框和内边距.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day02/08盒子模型练习.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day02/09继承.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day02/10综合练习.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day02/11晚课综合练习.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day02/12晚课综合练习.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day02/13晚课视频播放.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3/web笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/../3/web笔记.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3/web笔记.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +78,10 @@
       <updated>1658713643853</updated>
       <workItem from="1658713645578" duration="25808000" />
       <workItem from="1658763509547" duration="1393000" />
+      <workItem from="1658796736243" duration="26945000" />
+      <workItem from="1658834463159" duration="4331000" />
+      <workItem from="1658843256232" duration="13000" />
+      <workItem from="1658848804870" duration="1139000" />
     </task>
     <servers />
   </component>

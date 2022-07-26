@@ -1,10 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>03文本字体相关</title>
+    <style>
+        div {
+            width: 200px;
+            height: 50px;
+            border: 1px solid red;
+            /* 水平对齐方式：left right center */
+            text-align: center; /* 优先使用CSS的居中 */
+            /* 文本修饰：overline：上划线，underline：下划线，line-through：删除线，none：无 */
+            text-decoration: line-through;
+            line-height: 40px; /* 设置行高，单行：垂直居中，多行：控制行间距 */
+
+            text-shadow: green 5px 5px 10px; /* 文本阴影：颜色，x偏移值，y偏移值，浓度（0最清晰） */
+            font-size: 20px;/*字体大小*/
+            font-style: italic; /* 斜体 */
+            font-weight: bold;/*字体加粗，normal去掉加粗*/
+            /* font-family:xxx,xxx,xxx; 设置字体 */
+            /* font:20px  xxx,xxx,xxx; 设置字体大小+字体 */
+        }
+
+        a {
+            text-decoration: none; /* 去掉自带的下划线 */
+        }
+
+        h1 {
+            font-weight: normal; /* 去掉自带加粗效果 */
+            font-family: cursive;/*设置字体*/
+            font: 50px cursive;
+        }
+    </style>
 </head>
 <body>
-$END$
+<h1>这是h1</h1>
+<div>文本和字体weqwfqwqwqwq</div>
+<a href="">超链接</a>
 </body>
 </html>

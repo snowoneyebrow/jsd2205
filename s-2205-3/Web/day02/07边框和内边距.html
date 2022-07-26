@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>07边框和内边距</title>
+    <style>
+        #d1 {
+            border: 10px solid red;
+            /* http://doc.canglaoshi.org/w3/cssref/pr_border-style.html */
+            width: 300px;
+            height: 100px;
+            border-radius: 70px; /* 超过宽高+2个border就是正圆了 */
+            /* 如果不是正方形就是椭圆 */
+        }
+
+        #d2 {
+            width: 50px;
+            height: 50px;
+            border: 1px solid blue;
+            padding-left: 50px;
+            padding-top: 50px;
+        }
+    </style>
 </head>
 <body>
-$END$
+<div id="d2">内边距</div>
+<div id="d1"></div>
 </body>
 </html>

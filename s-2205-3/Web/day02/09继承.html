@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>09继承</title>
+    <style>
+        body > div {
+            color: red;
+        }
+
+        #d1 {
+            color: green; /* 作用范围越小优先级越高 */
+            background-color: pink; /**/
+        }
+
+        span {
+            color: blue !important;
+            /* 继承的优先级比较低 */
+            /* 重要：最高的优先级 */
+        }
+
+        #s1 {
+            color: orange;
+        }
+    </style>
 </head>
 <body>
-$END$
+<div id="d1">
+    <p>这是个p标签</p>
+    <span id="s1">这是个span</span>
+    <a href="">超链接</a>
+    <div><p>这也是p标签</p></div> <!-- 继承了上级元素 -->
+</div>
 </body>
 </html>

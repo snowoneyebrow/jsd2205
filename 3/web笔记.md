@@ -10,7 +10,7 @@
 - 作用：负责搭建页面结构和准备页面内容，相当于盖房子（毛坯房）
 - 学习HTML主要学习的是有哪些标签，以及标签的使用方式
 
-# 01文本相关
+# day01-01文本相关
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -62,7 +62,7 @@
 </html>
 ```
 
-# 02简历练习
+# day01-02简历练习
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -94,7 +94,7 @@
 </html>
 ```
 
-# 03图片标签
+# day01-03图片标签
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -125,7 +125,7 @@ c+Tab
 </html>
 ```
 
-# 04超链接
+# day01-04超链接
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -146,7 +146,7 @@ c+Tab
 </html>
 ```
 
-# 05表格标签
+# day01-05表格标签
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -193,7 +193,7 @@ c+Tab
 </html>
 ```
 
-# 06表单
+# day01-06表单
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -248,7 +248,7 @@ placeholder：占位文本，初始提示
 </html>
 ```
 
-# 07分区标签
+# day01-07分区标签
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -281,7 +281,7 @@ nav：导航
 </html>
 ```
 
-# 08CSS引入方式
+# day01-08CSS引入方式
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -316,14 +316,14 @@ Cascading Style Sheet：层叠样式表（美化页面、装修）
 </html>
 ```
 
-# css
+# day01-css
 ```css
 h3 {
     color: chocolate;
 }
 ```
 
-# 09选择器
+# day01-09选择器
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -375,7 +375,7 @@ h3 {
 </html>
 ```
 
-# 10选择器练习
+# day01-10选择器练习
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -425,7 +425,7 @@ h3 {
 </html>
 ```
 
-# 11选择器续
+# day01-11选择器续
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -478,7 +478,7 @@ h3 {
 </html>
 ```
 
-# 12选择器练习
+# day01-12选择器练习
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -553,3 +553,9 @@ h3 {
 </body>
 </html>
 ```
+
+# day02-
+```html
+
+```
+

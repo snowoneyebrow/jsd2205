@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--
+三原色：RGB，Red Green Blue：红 绿 蓝，每种颜色的取值范围：0-255
+颜色赋值方式：
+颜色单词赋值：red yellow pink ......
+6位16进制赋值：#ff0000
+3位16进制赋值：#f00（ff简化为f，00简化为0）
+3位10进制赋值：rgb(255,0,0)
+4位10进制赋值：rgba(255,0,0,0~1)，a=alpha代表透明度
+-->
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>01颜色和背景</title>
+    <style>
+        h1 {
+            color: red;
+            color: #00ff00;
+            color: #00f;
+            color: rgb(255, 0, 0);
+            color: rgb(255, 0, 0, 0.5);
+        }
+
+        div {
+            width: 1280px;
+            height: 720px;
+            background-color: purple;
+            background-image: url("../day01/Shine_Post_WP.jpg");
+            background-size: 720px 480px;
+            background-repeat: no-repeat;
+            /* background-position: 50px 100px; */
+            background-position: 50% 50%;
+        }
+    </style>
 </head>
 <body>
-$END$
+<div>ABC</div>
+<h1>颜色测试</h1>
 </body>
 </html>
