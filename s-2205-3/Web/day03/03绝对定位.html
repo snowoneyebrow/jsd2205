@@ -1,10 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>03绝对定位</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+
+        #d1 {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        #big {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin: 100px 0 0 100px;
+            position: relative;
+        }
+
+        #big > div {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin: 50px 0 0 50px;
+            position: relative; /* 若两个上级都有relative，则就近原则 */
+        }
+
+        #big > div > div {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            position: absolute;
+            /* 脱离文档流只和同级别的有关系 */
+            left: 0;
+            top: 0;
+            /* 把上级设置为relative作参照物（绿、红皆可） */
+        }
+    </style>
 </head>
 <body>
-$END$
+<div id="big">
+    <div>
+        <div></div>
+    </div>
+</div>
+<div id="d1">div1</div>
+<div>div2</div>
+<div>div3</div>
 </body>
 </html>

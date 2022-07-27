@@ -1,10 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>06知识点复习</title>
+    <style>
+        body {
+            padding-top: 100px;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+
+        .d1:hover {
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+
+        #d2 {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        #big {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin: 100px 0 0 100px;
+            position: relative;
+        }
+
+        #big > div {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin: 50px 0 0 50px;
+            position: relative;
+        }
+
+        #big > div > div {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        #d3 {
+            width: 1000px;
+            height: 100px;
+            background-color: red;
+            position: fixed;
+            top: 0;
+        }
+
+        img {
+            width: 500px;
+            height: 500px;
+        }
+
+        #d4 {
+            width: 50px;
+            height: 300px;
+            background-color: blue;
+            position: fixed;
+            right: 30px;
+            bottom: 50px;
+        }
+    </style>
 </head>
 <body>
-$END$
+<div class="d1">div1</div>
+<div class="d1">div2</div>
+<div class="d1">div3</div>
+
+<div id="big">
+    <div>
+        <div></div>
+    </div>
+</div>
+<div id="d2">div1</div>
+<div>div2</div>
+<div>div3</div>
+
+<div id="d3"></div>
+<div id="d4"></div>
+<img src="91731266_p0.png" alt="">
+<img src="91731266_p0.png" alt="">
+<img src="91731266_p0.png" alt="">
+<img src="91731266_p0.png" alt="">
+<img src="91731266_p0.png" alt="">
+<img src="91731266_p0.png" alt="">
 </body>
 </html>

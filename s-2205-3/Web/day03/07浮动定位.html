@@ -1,10 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>07浮动定位</title>
+    <style>
+        body > div {
+            width: 200px;
+            border: 1px solid red;
+            overflow: hidden;
+        }
+
+        #d1 {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            float: left;
+        }
+
+        #d2 {
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            float: left;
+        }
+
+        #d3 {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            float: left;
+        }
+
+        #d4 {
+            width: 300px;
+            height: 200px;
+            background-color: yellow;
+        }
+
+        ul {
+            list-style-type: none; /* 去掉图标 */
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+            margin-right: 20px;
+        }
+    </style>
 </head>
 <body>
-$END$
+<ul>
+    <li>首页</li>
+    <li>免费课</li>
+    <li>直播课</li>
+    <li>精品课</li>
+    <li>线上班</li>
+    <li>线下班</li>
+</ul>
+
+<div>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+</div>
+<div id="d4">div4</div>
 </body>
 </html>

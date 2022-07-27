@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>04绝对定位练习</title>
+    <style>
+        div {
+            width: 300px;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            position: relative;
+        }
+
+        input {
+            width: 260px;
+            border: 0;
+            padding: 10px 20px; /* 上下10，左右20 */
+        }
+
+        img {
+            position: absolute;
+            right: 40px;
+            top: 14px;
+        }
+
+        p {
+            color: red;
+            font-size: 12px;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-$END$
+<div>
+    <input type="text">
+    <img src="http://doc.canglaoshi.org/tstore_v1/images/login/yhm.png" alt="登录图片">
+    <p>用户名不能为空！</p>
+</div>
 </body>
 </html>

@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>02相对定位</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+
+        div:hover { /* 悬停 */
+            /*margin: 20px 0 0 20px;*/
+            position: relative; /* 相对定位 */
+            top: 20px;
+            left: 20px;
+        }
+    </style>
 </head>
 <body>
-$END$
+<div>div1</div>
+<div>div2</div>
+<div>div3</div>
 </body>
 </html>

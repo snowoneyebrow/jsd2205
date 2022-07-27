@@ -35,3 +35,5 @@ client为什么是守护线程？
 log4j.properties放resources文件夹里
 
 潜艇游戏保存功能，save方法，保存为obj文件
+
+重要：线程 集合 io lambda

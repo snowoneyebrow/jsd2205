@@ -5,23 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65c2cc31-be55-4ccc-b740-98e462e96eea" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/Web/day01/Shine_Post_WP.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day02/01颜色和背景.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day02/02背景图片练习.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day02/03文本字体相关.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day02/04文本和字体练习.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day02/05元素显示方式.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day02/06外边距.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day02/07边框和内边距.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day02/08盒子模型练习.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day02/09继承.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day02/10综合练习.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day02/11晚课综合练习.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day02/12晚课综合练习.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/day02/13晚课视频播放.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../3/web笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/../3/web笔记.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../3/web笔记.pdf" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day03/01综合练习.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day03/02相对定位.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day03/03绝对定位.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day03/04绝对定位练习.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day03/05固定定位.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day03/06知识点复习.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day03/07浮动定位.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day03/08综合练习.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day03/09综合练习.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day03/10溢出设置.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day03/11布局练习.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/day03/91731266_p0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2/exception.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2/socket/socket笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/../2/socket/socket笔记.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JSD2205_SE/out/production/JSD2205_SE/exception/AutoCloseableDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JSD2205_SE/out/production/JSD2205_SE/exception/AutoCloseableDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JSD2205_SE/out/production/JSD2205_SE/exception/FinallyDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JSD2205_SE/out/production/JSD2205_SE/exception/FinallyDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JSD2205_SE/out/production/JSD2205_SE/exception/FinallyDemo2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JSD2205_SE/out/production/JSD2205_SE/exception/FinallyDemo2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JSD2205_SE/out/production/JSD2205_SE/exception/FinallyDemo3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JSD2205_SE/out/production/JSD2205_SE/exception/FinallyDemo3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JSD2205_SE/out/production/JSD2205_SE/exception/TryCatchDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JSD2205_SE/out/production/JSD2205_SE/exception/TryCatchDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JSD2205_SE/out/production/JSD2205_SE/homework/day08/Test01.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JSD2205_SE/out/production/JSD2205_SE/homework/day08/Test01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JSD2205_SE/out/production/JSD2205_SE/homework/day08/Test02.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JSD2205_SE/out/production/JSD2205_SE/homework/day08/Test02.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JSD2205_SE/src/exception/AutoCloseableDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JSD2205_SE/src/exception/AutoCloseableDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JSD2205_SE/src/exception/ExceptionAPIDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JSD2205_SE/src/exception/ExceptionAPIDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JSD2205_SE/src/exception/FinallyDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JSD2205_SE/src/exception/FinallyDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JSD2205_SE/src/exception/FinallyDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JSD2205_SE/src/exception/FinallyDemo2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JSD2205_SE/src/exception/FinallyDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JSD2205_SE/src/exception/FinallyDemo3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JSD2205_SE/src/exception/IllegalAgeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JSD2205_SE/src/exception/IllegalAgeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JSD2205_SE/src/exception/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JSD2205_SE/src/exception/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JSD2205_SE/src/exception/ThrowDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JSD2205_SE/src/exception/ThrowDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JSD2205_SE/src/exception/ThrowsDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JSD2205_SE/src/exception/ThrowsDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JSD2205_SE/src/exception/TryCatchDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JSD2205_SE/src/exception/TryCatchDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/day02/01颜色和背景.html" beforeDir="false" afterPath="$PROJECT_DIR$/Web/day02/01颜色和背景.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../待做.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../待做.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,12 +75,15 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lin/Desktop&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lin/Desktop/jsd2205/s-2205-3/Web/day03&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lin\Desktop\jsd2205\s-2205-3\Web\day03" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Lin\Desktop\jsd2205\s-2205-3\Web\day01" />
     </key>
@@ -82,6 +102,9 @@
       <workItem from="1658834463159" duration="4331000" />
       <workItem from="1658843256232" duration="13000" />
       <workItem from="1658848804870" duration="1139000" />
+      <workItem from="1658883627167" duration="27964000" />
+      <workItem from="1658922086735" duration="184000" />
+      <workItem from="1658942023268" duration="20000" />
     </task>
     <servers />
   </component>
